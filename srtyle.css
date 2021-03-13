@@ -892,6 +892,37 @@ footer div a:first-child {
     main section:nth-child(2) div .text {
         font-size: 2rem;
     }
+
+    .navbar .hambarger:before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -15px;
+        width: 65px;
+        height: 52px;
+        border-bottom-right-radius: 5px;
+        background-color: white;
+    }
+
+    .navbar .hambarger span {
+        background: linear-gradient(445deg, #ff4646, rgb(10, 33, 56));
+    }
+
+    .navbar .social_link:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85px;
+        height: 52px;
+        border-bottom-left-radius: 5px;
+        background-color: rgb(245, 245, 245);
+        z-index: -10;
+    }
+
+    .navbar .social_link a {
+        color: black;
+    }
 }
 
 @media (max-width: 618px) {
