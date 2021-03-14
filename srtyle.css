@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0;
     padding: 0;
     background: #061c2d;
+
 }
+
 
 #particles-js {
     background: linear-gradient(360deg, rgb(62, 110, 212), #061c2d);
@@ -321,6 +324,109 @@ main section .reveal.active:before {
     align-items: center;
 }
 
+
+
+#particles-js div .cv a {
+    position: relative;
+    display: inline-block;
+    padding: 6px 30px;
+    margin-top: 30px;
+    color: #3ca0f1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+#particles-js div .cv a:hover {
+    color: white;
+    background: #0f93ff;
+    box-shadow: 0 0 10px #89caff, 0 0 40px #89caff, 0 0 80px #89caff;
+    transition-delay: 1s;
+}
+
+#particles-js div .cv a span {
+    position: absolute;
+    display: block;
+}
+
+#particles-js div .cv a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #2196f3)
+}
+
+#particles-js div .cv a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+#particles-js div .cv a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, #2196f3)
+}
+
+#particles-js div .cv a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#particles-js div .cv a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #2196f3);
+}
+
+#particles-js div .cv a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#particles-js div .cv a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #2196f3);
+}
+
+
+#particles-js div .cv a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main section div {
     text-align: center;
 }
@@ -430,7 +536,7 @@ main section:nth-child(3) div .text {
     position: relative;
     width: 100%;
     -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 
@@ -458,6 +564,10 @@ main section:nth-child(3) div .text {
     text-align: center;
     overflow: hidden;
     border-radius: 5px;
+}
+
+.swiper-slide a {
+    text-decoration: none;
 }
 
 .card .layer {
@@ -910,7 +1020,7 @@ footer div a:first-child {
         top: -15px;
         left: -15px;
         width: 65px;
-        height: 52px;
+        height: 55px;
         border-bottom-right-radius: 5px;
         box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
         background: rgba(255, 255, 255, 0.1);

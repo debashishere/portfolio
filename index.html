@@ -43,11 +43,28 @@
         <section id="particles-js">
             <div>
                 <h2 class="reveal name">Debashis Roy</h2>
-                <h2 class="reveal roll">Web Developer Intern</h2>
+                <h2 class="reveal roll">Web Developer</h2>
                 <div class="reveal link">
-                    <a href="">ABOUT <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span></a>
-                    <a href="">PROJECTS <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span></a>
-                    <a href="">CONTACT</a>
+                    <a href="#about">ABOUT <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span></a>
+                    <a href="#project">PROJECTS <span>&nbsp;&nbsp;/&nbsp;&nbsp;</span></a>
+                    <a href="#contact">CONTACT</a>
+                </div>
+                <div class="cv">
+                    <a class="reveal"
+                        href="https://drive.google.com/file/d/1EDXiB5-aAirubmxtlDohx9B8ouvg7DFM/view?usp=sharing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        CV
+                    </a>
+                    <a class="reveal" href="mailto:debashishere007@gmail.com">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Email
+                    </a>
                 </div>
             </div>
         </section>
@@ -74,53 +91,59 @@
                     <div class="swiper-wrapper">
                         <!--single slide start-->
                         <div class="swiper-slide">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="imgBx">
-                                        <img src="./images/blogthumb.JPG">
-                                    </div>
-                                    <div class="details">
-                                        <h2>Blog Website</h2>
+                            <a href="https://debashisblog.herokuapp.com/">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="imgBx">
+                                            <img src="./images/blogthumb.JPG">
+                                        </div>
+                                        <div class="details">
+                                            <h2>Blog Website</h2>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+
                         </div>
                         <!--single slide end-->
 
                         <!--single slide start-->
                         <div class="swiper-slide">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="imgBx">
-                                        <img src="./images/moviethumb.JPG">
-                                    </div>
-                                    <div class="details">
-                                        <h2>Movie Mania</h2>
+                            <a href="https://debashishere.github.io/food-landing-page/">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="imgBx">
+                                            <img src="./images/moviethumb.JPG">
+                                        </div>
+                                        <div class="details">
+                                            <h2>Movie Mania</h2>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
+
                         </div>
                         <!--single slide end-->
 
                         <!--single slide start-->
                         <div class="swiper-slide">
-                            <div class="card">
-                                <div class="layer"></div>
-                                <div class="content">
-                                    <div class="imgBx">
-                                        <img src="./images/foodthumb.JPG">
-                                    </div>
-                                    <div class="details">
-                                        <h2>Food</h2>
+                            <a href="">
+                                <div class="card">
+                                    <div class="layer"></div>
+                                    <div class="content">
+                                        <div class="imgBx">
+                                            <img src="./images/foodthumb.JPG">
+                                        </div>
+                                        <div class="details">
+                                            <h2>Food</h2>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <!--single slide end-->
-
-
                     </div>
                 </div>
             </div>
@@ -172,23 +195,25 @@
 
         <section id="contact">
             <h2>Contact Me<span>.</span></h2>
-            <form>
+
+            <form class="kwes-form" method="POST" action="https://kwes.io/api/foreign/forms/lZeMUN1cJN4m91TJYAPr">
                 <div class="form_content">
                     <div>
                         <label class="label" for="name">NAME:</label>
-                        <input type="text" name="name" placeholder="Enter your name here." required>
+                        <input type="text" name="name" placeholder="Enter your name here." rules="required">
                     </div>
                     <div>
                         <label class="label" for="email">EMAIL:</label>
-                        <input type="email" name="email" placeholder="Enter your email here." required>
+                        <input type="email" name="email" placeholder="Enter your email here." rules="required">
                     </div>
                     <div>
                         <label class="label" for="message">MESSAGE:</title></label>
-                        <textarea name="message" placeholder="Enter your message here." required></textarea>
+                        <textarea name="message" placeholder="Enter your message here." rules="required"></textarea>
                     </div>
                 </div>
                 <button type="submit">SEND INQUIRY</button>
             </form>
+
         </section>
     </main>
 
@@ -216,6 +241,7 @@
     <script src="./js/index.js" r></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
+    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
 </body>
 
 </html>

@@ -36,34 +36,34 @@ $(document).ready((event) => {
     $(".homeBtn").click(function () {
         $('html, body').animate({
             scrollTop: $("#particles-js").offset().top
-        }, 900);
+        }, 700);
     });
 
     $(".projectBtn").click(function () {
         $('html, body').animate({
             scrollTop: $("#project").offset().top
-        }, 900);
+        }, 700);
     });
 
     $(".aboutBtn").click(function () {
         $('html, body').animate({
             scrollTop: $("#about").offset().top
-        }, 900);
+        }, 700);
     });
 
     $(".contactBtn").click(function () {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
-        }, 900);
+        }, 700);
     });
 
 
 
+    let topMenuHeight = 0;
     var lastId,
         topMenu = $(".nav_link"),
-        topMenuHeight = 0;
-    // All list items
-    menuItems = topMenu.find("a"),
+        // All list items
+        menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
@@ -76,6 +76,12 @@ $(document).ready((event) => {
     // so we can get a fancy scroll animation
     let flag = false;
     menuItems.click(function (e) {
+        if ($(this).attr("href") == '#project') {
+            topMenuHeight = 95;
+        }
+        if ($(this).attr("href") == '#about' || $(this).attr("href") == '#contact') {
+            topMenuHeight = 53;
+        }
         var href = $(this).attr("href"),
             offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight - 1;
         $('html, body').stop().animate({
@@ -90,8 +96,9 @@ $(document).ready((event) => {
             $('.navigation').removeClass('active');
             $('.nav_overlay').removeClass('active');
             flag = false;
-        }, 1000)
+        }, 700)
         flag = true;
+        topMenuHeight = 0;
     });
 
     // Bind to scroll
