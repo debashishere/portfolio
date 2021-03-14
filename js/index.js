@@ -3,10 +3,10 @@ $(document).ready((event) => {
     setTimeout(() => {
         $(".loader").fadeOut();
         $(".loader").fadeOut("slow");
-        $(".loader").fadeOut(500);
+        $(".loader").fadeOut(1000);
         $(".loader_container").fadeOut();
         $(".loader_container").fadeOut("slow");
-        $(".loader_container").fadeOut(2500);
+        $(".loader_container").fadeOut(1500);
         $('.loader_container').removeClass('active');
     }, 1000)
 
