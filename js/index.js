@@ -1,9 +1,14 @@
 $(document).ready((event) => {
 
-    $(".loader_container").fadeOut();
-    $(".loader_container").fadeOut("slow");
-    $(".loader_container").fadeOut(3000);
-    $('.loader_container').removeClass('active');
+    setTimeout(() => {
+        $(".loader").fadeOut();
+        $(".loader").fadeOut("slow");
+        $(".loader").fadeOut(500);
+        $(".loader_container").fadeOut();
+        $(".loader_container").fadeOut("slow");
+        $(".loader_container").fadeOut(2500);
+        $('.loader_container').removeClass('active');
+    }, 1000)
 
     $('.hambarger').on("click", (event) => {
         $('.hambarger').toggleClass('active');

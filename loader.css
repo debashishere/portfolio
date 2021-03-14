@@ -18,6 +18,7 @@
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(360deg, rgb(62, 110, 212), #061c2d);
+    transform: scale(0);
     z-index: 50;
     opacity: 0;
     -webkit-animation: fadeout 4s;
@@ -53,7 +54,7 @@
     height: 200px;
     border-radius: 50%;
     background: #0d2323;
-    animation: animateloader 1.5s linear infinite;
+    animation: animateloader 0.9s linear infinite;
 }
 
 @keyframes animateloader {
