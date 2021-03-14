@@ -216,12 +216,16 @@ main section .reveal:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #e02bff;
+    background: rgb(233, 30, 99);
     transform-origin: right;
     transition: 0.5s;
     transition-delay: 0;
 }
 
+
+#about .reveal:before {
+    background: yellow;
+}
 
 main section .reveal:nth-child(2) {
     margin-top: 5px;
@@ -980,7 +984,7 @@ footer div a:first-child {
     }
 }
 
-@media (max-width: 618px) {
+@media (max-width: 518px) {
 
     main section div .name {
         font-size: 3rem;
@@ -994,6 +998,11 @@ footer div a:first-child {
 
     main section:nth-child(6) form {
         width: 95%;
+    }
+
+    .swiper-slide {
+        max-width: 300px;
+        margin: 0 10px;
     }
 }
 
