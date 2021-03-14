@@ -74,9 +74,9 @@ $(document).ready((event) => {
 
     var lastId,
         topMenu = $(".nav_link"),
-        topMenuHeight = topMenu.outerHeight() + 15,
-        // All list items
-        menuItems = topMenu.find("a"),
+        topMenuHeight = 0;
+    // All list items
+    menuItems = topMenu.find("a"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function () {
             var item = $($(this).attr("href"));
@@ -85,11 +85,12 @@ $(document).ready((event) => {
             }
         });
 
+    console.log("scrollItems", scrollItems);
     // Bind click handler to menu items
     // so we can get a fancy scroll animation
     menuItems.click(function (e) {
         var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight - 1;
         $('html, body').stop().animate({
             scrollTop: offsetTop
         }, 300);
@@ -100,7 +101,6 @@ $(document).ready((event) => {
     $(window).scroll(function () {
         // Get container scroll position
         var fromTop = $(this).scrollTop() + topMenuHeight;
-
         // Get id of current scroll item
         var cur = scrollItems.map(function () {
             if ($(this).offset().top < fromTop)

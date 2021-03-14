@@ -32,7 +32,7 @@ header,
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px 0 15px;
+    padding: 12px 12px 0 15px;
 
 }
 
@@ -145,13 +145,14 @@ header,
 
 .navigation .nav_link a:before {
     position: absolute;
-    top: 50%;
+    top: 95%;
     left: 0;
     content: '';
     width: 0;
     height: 6.5px;
     background: rgba(245, 6, 6, 0.8);
     transition: 0.5s width ease-in-out;
+    z-index: 0;
 }
 
 .navigation .nav_link a.active:before {
@@ -504,7 +505,9 @@ main section:nth-child(3) div .text {
 }
 
 .card .content .details h2 {
-    color: #0885be;
+    color: rgb(58,
+            58,
+            58);
     font-size: 1rem;
     letter-spacing: 0.05rem;
     transition: 0.5s;
@@ -664,6 +667,10 @@ main section:nth-child(5) .about_wrapper .text_sec p {
     font-size: 16px;
     line-height: 1.5rem;
     text-align: left;
+}
+
+main section:nth-child(5) .about_wrapper .text_sec p:nth-child(2) {
+    padding-top: 10px;
 }
 
 main section:nth-child(6) {
@@ -901,11 +908,20 @@ footer div a:first-child {
         width: 65px;
         height: 52px;
         border-bottom-right-radius: 5px;
-        background-color: white;
+        box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
+        background: rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(2px);
+    }
+
+    .navbar .hambarger.active:before {
+        box-shadow: none;
+        background: white;
     }
 
     .navbar .hambarger span {
-        background: linear-gradient(445deg, #ff4646, rgb(10, 33, 56));
+        background: linear-gradient(445deg, #ff4646, rgb(243, 243, 243));
     }
 
     .navbar .social_link:before {
@@ -916,12 +932,17 @@ footer div a:first-child {
         width: 85px;
         height: 52px;
         border-bottom-left-radius: 5px;
-        background-color: rgb(245, 245, 245);
+        box-shadow: 10px 10px 50px rgb(0 0 0 / 50%);
+        background: rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
         z-index: -10;
+
     }
 
     .navbar .social_link a {
-        color: black;
+        color: rgb(248, 211, 211);
     }
 }
 
@@ -1004,10 +1025,6 @@ footer div a:first-child {
 
     main section:nth-child(6) h2 {
         font-size: 2.5rem;
-    }
-
-    .card {
-        width: 95%;
     }
 
     main section:nth-child(5) .about_wrapper .img_sec {
