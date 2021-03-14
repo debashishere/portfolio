@@ -196,19 +196,23 @@
         <section id="contact">
             <h2>Contact Me<span>.</span></h2>
 
-            <form class="kwes-form" method="POST" action="https://kwes.io/api/foreign/forms/1y8BbIS56seQdFMSDOUp">
+            <form method="POST" action="https://app.99inbound.com/api/e/vmjrVIRu">
                 <div class="form_content">
                     <div>
                         <label class="label" for="name">NAME:</label>
-                        <input type="text" name="name" placeholder="Enter your name here." rules="required">
+                        <input type="text" name="name" placeholder="Enter your name here." required>
                     </div>
                     <div>
                         <label class="label" for="email">EMAIL:</label>
-                        <input type="email" name="email" placeholder="Enter your email here." rules="required">
+                        <input type="email" name="email" placeholder="Enter your email here." required>
                     </div>
                     <div>
                         <label class="label" for="message">MESSAGE:</title></label>
-                        <textarea name="message" placeholder="Enter your message here." rules="required"></textarea>
+                        <textarea name="message" placeholder="Enter your message here." required></textarea>
+                    </div>
+                    <div style="position: absolute; left: -5000px;">
+                        <input type="checkbox" name="sour_black_argyle_envelope" value="1" tabindex="-1"
+                            autocomplete="no">
                     </div>
                 </div>
                 <button type="submit">SEND INQUIRY</button>
@@ -241,7 +245,6 @@
     <script src="./js/index.js" r></script>
     <script src="./js/particles.js"></script>
     <script src="./js/app.js"></script>
-    <script src="https://kwes.io/v2/kwes-script.js" defer></script>
 </body>
 
 </html>
