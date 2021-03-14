@@ -1,4 +1,10 @@
 $(document).ready((event) => {
+
+    $(".loader_container").fadeOut();
+    $(".loader_container").fadeOut("slow");
+    $(".loader_container").fadeOut(3000);
+    $('.loader_container').removeClass('active');
+
     $('.hambarger').on("click", (event) => {
         $('.hambarger').toggleClass('active');
         $('.navigation').toggleClass('active');
