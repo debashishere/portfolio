@@ -89,6 +89,7 @@ $(document).ready((event) => {
             $('.hambarger').removeClass('active');
             $('.navigation').removeClass('active');
             $('.nav_overlay').removeClass('active');
+            flag = false;
         }, 1000)
         flag = true;
     });
@@ -119,7 +120,5 @@ $(document).ready((event) => {
         }
 
     })
-
-    flag = false;
 
 })
