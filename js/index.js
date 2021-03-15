@@ -23,7 +23,7 @@ $(document).ready((event) => {
             trigger: text,
             toggleClass: 'active',
             start: "top 90%",
-            end: "top 20%",
+            end: "top 3%",
             // markers: true
         })
     })
@@ -66,6 +66,7 @@ $(document).ready((event) => {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
         }, 700);
+
     });
 
 
@@ -88,10 +89,10 @@ $(document).ready((event) => {
     let flag = false;
     menuItems.click(function (e) {
         if ($(this).attr("href") == '#project') {
-            topMenuHeight = 95;
+            topMenuHeight = -10;
         }
         if ($(this).attr("href") == '#about' || $(this).attr("href") == '#contact') {
-            topMenuHeight = 53;
+            topMenuHeight = -25;
         }
         var href = $(this).attr("href"),
             offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight - 1;
@@ -125,7 +126,6 @@ $(document).ready((event) => {
             // Get the id of the current element
             cur = cur[cur.length - 1];
             var id = cur && cur.length ? cur[0].id : "";
-
             if (lastId !== id) {
                 lastId = id;
                 // Set/remove active class
